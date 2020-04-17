@@ -1,0 +1,53 @@
+
+class Character extends Walker{
+
+  //Vides dels jugadors 
+  private int lWarrior = 5;
+  private int lEnemy = 3;  
+  //Radi de cada jugador  
+  int radiWarrior = 30;
+  int radiEnemy = 30;   
+  boolean boolEnemy = true;
+  boolean boolWarrior = true; 
+  
+  Character(){   
+    super();    
+  }
+  
+   void position(int posX, int posY){      
+       x = posX/2;
+       y = posY/2;      
+    }
+       
+   void invocarW(String result){
+      fill(0,255,0);    
+      circle(x, y, radiWarrior);
+      textSize(17);   
+    
+      if(result.length()>1){
+        text(lWarrior +" "+result, x+15, y); 
+        boolWarrior = false;                   
+      } 
+            
+      if(boolWarrior==true) {        
+        text(lWarrior +" Warrior ", x+15, y);         
+      }             
+    }
+        
+
+    void invocarE(String result2){      
+      fill(255,0,0);     
+      circle(x, y, radiEnemy);
+      textSize(20); 
+      
+      if(result2.length()>1){
+        text(lEnemy +" " +result2 +" dist: "+nfc(dis,2), x+15, y); 
+        boolEnemy = false;                    
+      }       
+      
+      if(boolEnemy==true){        
+        text(lEnemy +" Enemy, dist: "+nfc(dis,2), x+15, y);         
+      }           
+    }
+
+}
