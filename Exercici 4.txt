@@ -1,0 +1,20 @@
+
+//Aquest exercici cambia quan nomralitzes la linia, per qu edeixa de estar al mig i tots els valos que es printen son 
+constants. Al normalitzar la linia, ho hem convertit en un vector unitari amb modul igual a 1.
+PVector loc;
+void setup() {
+  size(1080,720);
+  loc = new PVector(540,360);
+
+}
+ 
+void draw() {
+  background(255);
+
+  line(loc.x, loc.y, mouseX, mouseY);
+  loc.normalize();
+  println(loc);
+  //print(mag(mouseX, mouseY));
+  //print(dist(loc.x, loc.y, mouseX, mouseY));
+  
+}

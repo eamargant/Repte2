@@ -1,0 +1,13 @@
+Exercici 1
+
+	Una classe per descriure un vector de dues o tres dimensions. 
+	Un vector és una entitat que té tant magnitud com direcció. 
+	El tipus de dades, però, emmagatzema els components del vector (x, y per a 2D i x, y, z per a 3D). 
+	Es pot accedir a la magnitud i direcció a través dels mètodes mag() i heading().
+
+Exercici 2
+
+	El priimer cop ja ho vaig fer amb clases PVector.
+
+
+

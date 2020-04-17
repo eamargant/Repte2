@@ -1,0 +1,15 @@
+PVector loc;
+void setup() {
+  size(1080,720);
+  loc = new PVector(540,360);
+
+}
+ 
+void draw() {
+  background(255);
+
+  line(loc.x, loc.y, mouseX, mouseY);
+  print(mag(mouseX, mouseY));
+  //print(dist(loc.x, loc.y, mouseX, mouseY));
+  
+}
